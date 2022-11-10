@@ -4,8 +4,10 @@ int test(int a[]);
 int main()
 {
 	int arr[3]={1,2,3};
-	//printf("%d\n",*arr);
-	printf("%d\n",sizeof(arr));
+	int brr[3];
+	//brr=arr;//≤ª‘ –Ì 
+	printf("%d\n",*arr);
+	//printf("%d\n",sizeof(arr));
 	/*char* p=arr;
 	printf("%d\n",sizeof(p));*/
 	//arr++;
@@ -13,6 +15,9 @@ int main()
  }
 int test(int arr[])
 {
+	int brr[3];
+	arr=brr;
+	//printf("%d\n",sizeof(arr));
 	arr++;
 	printf("%d\n",*arr);
 }
